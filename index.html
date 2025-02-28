@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Nike</div>
+        
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+    
+    <section class="products" id="product-list"></section>
+    
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart (<span id="cart-items-count">0</span>)</h2>
+            <button onclick="closeCart()">✖</button>
+        </div>
+        <div class="cart-content" id="cart-items"></div>
+        <div class="cart-summary">
+            <p>Subtotal: ₹<span id="subtotal">0</span></p>
+            <button class="checkout-btn" id="place">PLACE ORDER</button>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal" id="thank-you-modal">
+        <p>🛍️ Thank you for shopping with us!</p>
+        <div class="modal-footer">
+        <button onclick="closeModal()">OK</button>
+        
+        </div>
+        
+    </div>
+</body>
+</html>
