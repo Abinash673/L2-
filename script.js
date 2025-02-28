@@ -136,7 +136,14 @@ window.onload = function () {
 
 document.getElementById("place").addEventListener("click", function () {
     document.getElementById("thank-you-modal").style.display = "block";
-    document.getElementById("modal-overlay").style.display = "none";
+    document.getElementById("modal-overlay").style.display = "block";
     document.getElementById("cart-sidebar").classList.remove("open");
-});
+    cart = [];
+    updateCart();
+}); 
+
+function closeModal() {
+    document.getElementById("thank-you-modal").style.display = "none";
+    document.getElementById("modal-overlay").style.display = "none";
+}
 
