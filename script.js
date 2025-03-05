@@ -1,10 +1,130 @@
 let cart = [];
 let products = [
-  { id: 1, name: "Nike Slim Shirt", image: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5742f317-d0c8-4d01-8a66-81d6f4bc73ca/NIKE+SB+ZOOM+BLAZER+LOW+PRO+GT.png", price: 120 },
-  { id: 2, name: "Adidas Fit Shirt", image: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4b24bc11-4ea0-4ee5-8d16-aa58b518475b/AIR+FORCE+1+%2707+FRESH.png", price: 100 },
-  { id: 3, name: "Lacoste Free Shirt", image: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5d7a4f70-4e83-4317-b01f-111b079bed16/NK+SB+ZM+BLAZER+LOW+QS.png", price: 220 },
-  { id: 4, name: "Nike Slim Pant", image: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/6c07f915-3a5e-4586-a75c-78e3aecc402f/custom-nike-blazer-mid-77-shoes-by-you.png", price: 78 },
-  { id: 5, name: "Nike Zoom Blazer Mid", image: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4abaf8d1-c95e-4404-ad8f-45a2e3e59437/NIKE+ZOOM+BLAZER+MID+QS.png", price: 65 },
+  {
+    id: 1,
+    name: "Nike Slim Shirt",
+    image:
+      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5742f317-d0c8-4d01-8a66-81d6f4bc73ca/NIKE+SB+ZOOM+BLAZER+LOW+PRO+GT.png",
+    price: 120,
+  },
+  {
+    id: 2,
+    name: "Adidas Fit Shirt",
+    image:
+      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4b24bc11-4ea0-4ee5-8d16-aa58b518475b/AIR+FORCE+1+%2707+FRESH.png",
+    price: 100,
+  },
+  {
+    id: 3,
+    name: "Lacoste Free Shirt",
+    image:
+      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5d7a4f70-4e83-4317-b01f-111b079bed16/NK+SB+ZM+BLAZER+LOW+QS.png",
+    price: 220,
+  },
+  {
+    id: 4,
+    name: "Nike Slim Pant",
+    image:
+      "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/6c07f915-3a5e-4586-a75c-78e3aecc402f/custom-nike-blazer-mid-77-shoes-by-you.png",
+    price: 78,
+  },
+  {
+    id: 5,
+    name: "Nike Zoom Blazer Mid",
+    image:
+      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4abaf8d1-c95e-4404-ad8f-45a2e3e59437/NIKE+ZOOM+BLAZER+MID+QS.png",
+    price: 65,
+  },
+  {
+    id: 1,
+    name: "Nike Slim Shirt",
+    image:
+      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5742f317-d0c8-4d01-8a66-81d6f4bc73ca/NIKE+SB+ZOOM+BLAZER+LOW+PRO+GT.png",
+    price: 120,
+  },
+  {
+    id: 2,
+    name: "Adidas Fit Shirt",
+    image:
+      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4b24bc11-4ea0-4ee5-8d16-aa58b518475b/AIR+FORCE+1+%2707+FRESH.png",
+    price: 100,
+  },
+  {
+    id: 3,
+    name: "Lacoste Free Shirt",
+    image:
+      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5d7a4f70-4e83-4317-b01f-111b079bed16/NK+SB+ZM+BLAZER+LOW+QS.png",
+    price: 220,
+  },
+  {
+    id: 4,
+    name: "Nike Slim Pant",
+    image:
+      "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/6c07f915-3a5e-4586-a75c-78e3aecc402f/custom-nike-blazer-mid-77-shoes-by-you.png",
+    price: 78,
+  },
+  {
+    id: 5,
+    name: "Nike Zoom Blazer Mid",
+    image:
+      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4abaf8d1-c95e-4404-ad8f-45a2e3e59437/NIKE+ZOOM+BLAZER+MID+QS.png",
+    price: 65,
+  },{
+    id: 1,
+    name: "Nike Slim Shirt",
+    image:
+      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5742f317-d0c8-4d01-8a66-81d6f4bc73ca/NIKE+SB+ZOOM+BLAZER+LOW+PRO+GT.png",
+    price: 120,
+  },
+  {
+    id: 2,
+    name: "Adidas Fit Shirt",
+    image:
+      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4b24bc11-4ea0-4ee5-8d16-aa58b518475b/AIR+FORCE+1+%2707+FRESH.png",
+    price: 100,
+  },
+  {
+    id: 3,
+    name: "Lacoste Free Shirt",
+    image:
+      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5d7a4f70-4e83-4317-b01f-111b079bed16/NK+SB+ZM+BLAZER+LOW+QS.png",
+    price: 220,
+  },
+  {
+    id: 4,
+    name: "Nike Slim Pant",
+    image:
+      "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/6c07f915-3a5e-4586-a75c-78e3aecc402f/custom-nike-blazer-mid-77-shoes-by-you.png",
+    price: 78,
+  },
+  {
+    id: 5,
+    name: "Nike Zoom Blazer Mid",
+    image:
+      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4abaf8d1-c95e-4404-ad8f-45a2e3e59437/NIKE+ZOOM+BLAZER+MID+QS.png",
+    price: 65,
+  },
+  {
+    id: 3,
+    name: "Lacoste Free Shirt",
+    image:
+      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5d7a4f70-4e83-4317-b01f-111b079bed16/NK+SB+ZM+BLAZER+LOW+QS.png",
+    price: 220,
+  },
+  {
+    id: 4,
+    name: "Nike Slim Pant",
+    image:
+      "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/6c07f915-3a5e-4586-a75c-78e3aecc402f/custom-nike-blazer-mid-77-shoes-by-you.png",
+    price: 78,
+  },
+  {
+    id: 5,
+    name: "Nike Zoom Blazer Mid",
+    image:
+      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4abaf8d1-c95e-4404-ad8f-45a2e3e59437/NIKE+ZOOM+BLAZER+MID+QS.png",
+    price: 65,
+  },
 ];
 
 // Toggle Cart Sidebar
@@ -15,6 +135,19 @@ function toggleCart() {
 // Close Cart
 function closeCart() {
   document.getElementById("cart-sidebar").classList.remove("open");
+}
+
+function showModal(message) {
+  let modal = document.getElementById("productModal");
+  let modalMessage = document.getElementById("modalMessage");
+
+  modalMessage.textContent = message;
+  modal.style.display = "block";
+
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 2000);
 }
 
 // Add to Cart
@@ -29,8 +162,14 @@ function addToCart(id) {
   }
 
   updateCart();
+
+  showModal(`Your ${product.name} was added to the cart!`);
 }
 
+
+document.querySelector(".close").addEventListener("click", () => {
+  document.getElementById("productModal").style.display = "none";
+});
 // Increment Quantity
 function incrementQuantity(id) {
   let cartItem = cart.find((p) => p.id === id);
@@ -72,10 +211,12 @@ function sortCart(order) {
   }
   updateCart();
 }
-document.querySelector(".cart-summary").innerHTML += `
-        <button class="sort-btn" onclick="sortCart('asc')">Sort Low to High</button>
-        <button class="sort-btn" onclick="sortCart('desc')">Sort High to Low</button>
-        <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+document.querySelector(".cart-summary-sort").innerHTML += `
+         <div class="cart-summary1">
+         <button class="sort-btn" onclick="sortCart('asc')">Sort Low to High</button>
+         <button class="sort-btn" onclick="sortCart('desc')">Sort High to Low</button>
+         </div>
+         <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
     `;
 
 // Update Cart UI
@@ -84,8 +225,6 @@ function updateCart() {
   let subtotal = 0;
   let totalItems = 0;
   cartItems.innerHTML = "";
-  
-  
 
   cart.forEach((item) => {
     subtotal += item.price * item.quantity;
@@ -95,28 +234,31 @@ function updateCart() {
         <img src="${item.image}" width="50">
         <p>${item.name}</p>
         <p>₹${item.price} x ${item.quantity}</p>
-        <button class="increment-btn" onclick="incrementQuantity(${item.id})">+</button>
-        <button class="decrement-btn" onclick="decrementQuantity(${item.id})" ${item.quantity === 1 ? "disabled" : ""}>-</button>
-        <button class="remove-btn" onclick="removeFromCart(${item.id})">Remove</button>
+        <button class="increment-btn" onclick="incrementQuantity(${
+          item.id
+        })">+</button>
+        <button class="decrement-btn" onclick="decrementQuantity(${item.id})" ${
+      item.quantity === 1 ? "disabled" : ""
+    }>-</button>
+        <button class="remove-btn" onclick="removeFromCart(${
+          item.id
+        })">Remove</button>
       </div>
     `;
   });
 
   document.getElementById("subtotal").innerText = subtotal;
-  document.getElementById("cart-count").innerText = totalItems; 
+  document.getElementById("cart-count").innerText = totalItems;
   document.getElementById("cart-items-count").innerText = totalItems;
 
-`<div class="cart-summary1">
-<button class="sort-btn" onclick="sortCart('asc')">Sort Low to High</button>
-  <button class="sort-btn" onclick="sortCart('desc')">Sort High to Low</button>
-  <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
-</div>
+//   `<div class="cart-summary1">
+// <button class="sort-btn" onclick="sortCart('asc')">Sort Low to High</button>
+//   <button class="sort-btn" onclick="sortCart('desc')">Sort High to Low</button>
+//   <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+// </div>
   
-`; 
- 
+// `;
 }
-
-
 
 // Load Products on Page Load
 window.onload = function () {
@@ -133,17 +275,15 @@ window.onload = function () {
   });
 };
 
-
 document.getElementById("place").addEventListener("click", function () {
-    document.getElementById("thank-you-modal").style.display = "block";
-    document.getElementById("modal-overlay").style.display = "block";
-    document.getElementById("cart-sidebar").classList.remove("open");
-    cart = [];
-    updateCart();
-}); 
+  document.getElementById("thank-you-modal").style.display = "block";
+  document.getElementById("modal-overlay").style.display = "block";
+  document.getElementById("cart-sidebar").classList.remove("open");
+  cart = [];
+  updateCart();
+});
 
 function closeModal() {
-    document.getElementById("thank-you-modal").style.display = "none";
-    document.getElementById("modal-overlay").style.display = "none";
+  document.getElementById("thank-you-modal").style.display = "none";
+  document.getElementById("modal-overlay").style.display = "none";
 }
-

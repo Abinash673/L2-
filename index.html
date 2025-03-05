@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -12,18 +13,31 @@
         <div class="logo">Nike</div>
         
         <div class="cart-icon" onclick="toggleCart()">
-            🛒 <span id="cart-count">0</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+               <span id="cart-count">0</span>
         </div>
     </header>
     
     <section class="products" id="product-list"></section>
+
+    <div id="productModal" class="modal1">
+        <div class="modal-content">
+          <p id="modalMessage">Your product was added!</p>
+          <span class="close">close</span>
+        </div>
+        
+      </div>
     
     <div class="cart-sidebar" id="cart-sidebar">
         <div class="cart-header">
             <h2>Your Cart (<span id="cart-items-count">0</span>)</h2>
             <button onclick="closeCart()">✖</button>
         </div>
+        <div class="cart-summary-sort">
+            
+        </div> 
         <div class="cart-content" id="cart-items"></div>
+        
         <div class="cart-summary">
             <p>Subtotal: ₹<span id="subtotal">0</span></p>
             <button class="checkout-btn" id="place">PLACE ORDER</button>
